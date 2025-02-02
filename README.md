@@ -1,50 +1,42 @@
-# React + TypeScript + Vite
+# Simulation Model
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Overview
+This project is a simulation model of a queuing system with request sources, devices, and a buffer. The model operates in two modes: step-by-step and automatic. It provides visualizations of simulation results, including statistics on device utilization and rejection probabilities.
 
-Currently, two official plugins are available:
+## Features
+- Request generation based on Poisson distribution
+- Request processing with uniform service time
+- Buffering and request rejection handling
+- Two operation modes: step-by-step and automatic
+- Real-time visualization of simulation results
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Technologies Used
+- **Frontend**: React, TypeScript
+- **Build Tool**: Vite
 
-## Expanding the ESLint configuration
+## How to Run
+1. Clone the repository:
+   ```sh
+   git clone https://github.com/vovandreevik/simulation_model
+   ```
+2. Install dependencies:
+   ```sh
+   npm install
+   ```
+3. Start the application:
+   ```sh
+   npm run dev
+   ```
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+## ## Screenshots
+1. Main page
+<img src="https://github.com/user-attachments/assets/23763688-78bd-4506-b0e0-de51f02b37ba" alt="photo" height="200"/>
 
-- Configure the top-level `parserOptions` property like this:
+2. Step Mode
+<img src="https://github.com/user-attachments/assets/0d6d8409-ef29-4fed-9968-62511e6bcf60" alt="photo" height="400"/>
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+3. Auto Mode
+<img src="https://github.com/user-attachments/assets/d8a8888f-7b20-4744-a7a3-428f0ece2d8f" alt="photo" height="400"/>
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
-
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
-
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+4. Chart example
+<img src="https://github.com/user-attachments/assets/ef211bb3-518e-48b7-b616-1c8ab45f5a54" alt="photo" height="400"/>
