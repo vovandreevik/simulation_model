@@ -1,0 +1,156 @@
+/* Основные стили страницы */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 0;
+}
+
+/* Заголовок */
+h1 {
+    text-align: center;
+    color: #333;
+    margin-top: 30px;
+}
+
+/* Кнопки */
+button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin: 10px 5px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+button:disabled {
+    background-color: #cccccc;
+    cursor: not-allowed;
+}
+
+/* Контейнер с параметрами симуляции */
+div {
+    margin: 20px;
+}
+
+/* Формы */
+label {
+    font-size: 16px;
+    margin-right: 10px;
+    color: #555;
+}
+
+input[type="number"] {
+    padding: 8px;
+    margin: 5px 0;
+    width: 60px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+input[type="number"]:focus {
+    outline: none;
+    border-color: #007bff;
+}
+
+/* Стили для таблиц */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    padding: 12px;
+    text-align: center;
+    border: 1px solid #ddd;
+    font-size: 14px;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+td {
+    background-color: #fff;
+}
+
+td, th {
+    color: #333;
+}
+
+td:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+/* Стили для заголовков таблиц */
+h2, h3 {
+    color: #333;
+    margin-top: 20px;
+    font-size: 20px;
+}
+
+/* Стиль для контейнера с шагами симуляции */
+.simulation-controls {
+    margin-top: 30px;
+    text-align: center;
+}
+
+/* Стиль для календаря событий */
+table {
+    width: 100%;
+    margin-top: 20px;
+    border-collapse: collapse;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+}
+
+th {
+    background-color: #f4f4f4;
+}
+
+/* Стилизация для разделителей таблиц */
+table {
+    margin-top: 20px;
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Стили для кнопок управления симуляцией */
+button {
+    font-size: 18px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #007bff;
+}
+
+/* Адаптивность */
+@media (max-width: 768px) {
+    body {
+        font-size: 14px;
+    }
+
+    table, th, td {
+        font-size: 12px;
+    }
+
+    input[type="number"] {
+        width: 50px;
+    }
+}
